@@ -3,7 +3,7 @@ name: build-sphinx-to-gh-pages
 env:
   GITHUB_ACTOR: petersonwsantos
   GITHUB_REPOSITORY: petersonwsantos/resumo-aws
-  GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
+  GITHUB_TOKEN: ${{ secrets.GIT_WFW1 }}
 
 on: 
   push:
@@ -20,7 +20,7 @@ jobs:
     
       - name: Get prerequisites and clone repository
         env:
-          GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GIT_WFW1 }}
         run: |
           set -x
           apt-get update
