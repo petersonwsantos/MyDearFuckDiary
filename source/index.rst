@@ -1,5 +1,5 @@
 
-Pett - Documetação
+Pettt - Documetação
 ------------------------------
 Seja bem vindo a documentação do Peppi.
 
