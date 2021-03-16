@@ -2,7 +2,7 @@
 set -x
 
 apt-get update
-apt-get -y install git rsync python3
+apt-get -y install git rsync python3 python3-pip
 
 pip install requirements.txt 
 
