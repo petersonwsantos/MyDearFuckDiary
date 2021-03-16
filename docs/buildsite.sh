@@ -4,7 +4,7 @@ set -x
 apt-get update
 apt-get -y install git rsync python3 python3-pip
 
-python3 -m pip install requirements.txt 
+python3 -m pip install requirements.txt --user 
 
 pwd ls -lah
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
