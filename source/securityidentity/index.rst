@@ -1,18 +1,13 @@
-############################
-Amazon Web Services
-############################
-
-
-AWS Compute
-*************
-
+######################################
 AWS Security, Identity & Compliance
-**************************************
+#######################################
+
 
 Identity Access Management (IAM)
-====================================
+**************************************
 
-Gerencia usuários grupos, roles e policies. Algumas de suas features são:
+Gerencia IAM users , groups, roles e policies.
+Algumas de suas features são:
 
 * Controle de segurança para o acesso individual e em grupo aos recursos da AWS.
 * Suporte nativo para autenticação com MFA.
@@ -25,7 +20,7 @@ Gerencia usuários grupos, roles e policies. Algumas de suas features são:
 * Eventually Consistent
 
 Password Policy
-------------------------
+====================================
 
 * Definição de comprimento mínimo de senha
 * Complexidade
@@ -36,10 +31,10 @@ Password Policy
 
 
 Características
-------------------------
+========================
 
 User-Based
-^^^^^^^^^^^^^^
+------------^^
 
 IAM Policies
 """"""""""""""
@@ -62,7 +57,7 @@ IAM Policies
 
 
 Resource Based Policies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 Atachado a um Resource e está disponível apenas para:
 
@@ -73,26 +68,26 @@ Atachado a um Resource e está disponível apenas para:
 * AWS KMS
 
 Management Console
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 Includes
-------------------------
+========================
 
 User
-^^^^^^^^^^^^^^^
+---------------
 
 Quando o usuário é criado ele recebe "Access Key ID" e "Secret Access Key".
 
 Group
-^^^^^^^^^^^^^^^
+---------------
 
-Grups são coleções de IAM Users.
+Groups são coleções de IAM Users.
 É permitido 100 Groups por account.
 Os usuários podem pertencer a vários grupos.
 
 
 Role
-^^^^^^^^^^^^^^^
+---------------
 
 Quando anexo um usuário a varias roles é possível qual papel desejo. Ex: Role de desenvolvimento ou Role de produção.
 ( IAM User + (RolePROD(+Policy2) + RoleDEV(Policy1+Policy2)
@@ -109,7 +104,7 @@ Posso dar permissão para uma instância usar um recurso AWS
 * podem ter permissões específicas em uma região.
 
 Policy
-^^^^^^^^^^^^^^^
+---------------
 
 O que o usuário ou grupo pode fazer.
 
@@ -125,20 +120,20 @@ Tipos:
 
     * seleciona serviço:
     * seleciona ações: (list, read, tagging. write. permission Management)
-    * selecionar resource:  posibilidade de bloqueio por regioão. account, intanceId
+    * selecionar resource:  possibilidades de bloqueio por região. account, intanceId
     * Request condition: (mfa, horário, etc ...)
 
 Exemplos:
 
 * EC2
     * Ligar instâncias
-    * Desligar instãncias
+    * Desligar instâncias
 * RD
     * Fazer querys
     * Criar bancos
 
 Identity Federation
-------------------------
+========================
 
 * A IAM Role pode ser usada para especificar permissões para usuários identificados externamente.
 * Max 5000 IAM users per account
@@ -154,7 +149,7 @@ Identity Federation
 
 
 Best Pratices
-------------------------
+========================
 
 * Enable MFA and Reduce root access keys
 * Create Individual IAM users
@@ -170,7 +165,7 @@ Best Pratices
     * Default deny
 
 * Apply IAM password policy
-* Usar Roles para apliacações que rodan em uma EC2.
+* Usar Roles para aplicações que rodam em uma EC2.
 
     * onde possível, não use credenciais de segurança.
     * nunca compartilhe credenciais de segurança.
@@ -188,9 +183,3 @@ Best Pratices
 * Rotate credentials regularly
 * Remova credenciais desnecessárias
 * Usar Policy condicionais para segurança extra.
-
-
-
-AWS Management Tools
-**************************************
-

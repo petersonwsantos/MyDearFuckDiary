@@ -1,7 +1,7 @@
 
-Pettt - Documetação
+GoPeppi - Documetação
 ------------------------------
-Seja bem vindo a documentação do Peppi.
+Seja bem vindo a documentação.
 
 
 Manuais
@@ -10,4 +10,4 @@ Manuais
    :maxdepth: 6
 
 
-   aws/index
+   securityidentity/index
