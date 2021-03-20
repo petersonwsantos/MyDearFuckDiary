@@ -6,18 +6,20 @@ AWS Security, Identity & Compliance
 Identity Access Management (IAM)
 **************************************
 
+Gerencia a autenticação e permissões de uso aos recursos AWS.
+
 Gerencia IAM users , groups, roles e policies.
 Algumas de suas features são:
 
 * Controle de segurança para o acesso individual e em grupo aos recursos da AWS.
 * Suporte nativo para autenticação com MFA.
 * Acesso compartilhado à sua conta AWS.
-* Permissões granulares
-* Acesso seguro aos recursos da AWS para aplicativos executados no EC2
-* Identity federation(federação): para conceder permissões para usuários fora da AWS (FB, Google ..)
-* Conformidade com o padrão de segurança de dados (DSS) da indústria de cartões de pagamento (PCI)
-* Auditoria de registros de acesso usando CloudTrail
-* Eventually Consistent
+* Permissões granulares.
+* Acesso seguro aos recursos da AWS para aplicativos executados no EC2.
+* Identity federation(federação): para conceder permissões para usuários fora da AWS (Facebook, Google )
+* Conformidade com o padrão de segurança de dados (DSS) da indústria de cartões de pagamento (PCI).
+* Auditoria de registros de acesso usando CloudTrail.
+* alta disponibilidade(Eventually Consistent).
 
 Password Policy
 ====================================
@@ -45,8 +47,8 @@ IAM Policies
 * **Resources AWS** Ex: S3. ("Principal" precisa ser especificado. Can be ARNs of User, Roles, AWS service)
 * **Role**
 
-    * Especifique "Principal" atachando uma "Trust Policy(Política de confiança)" que diz quem pode assumir a Role.
-    * Anexe as políticas de permissão normais, SEM um principal, "QUEM" é determinado pela Trust Policy.
+  * Especifique "Principal" atachando uma "Trust Policy(Política de confiança)" que diz quem pode assumir a Role.
+  * Anexe as políticas de permissão normais, SEM um principal, "QUEM" é determinado pela Trust Policy.
 
 2. Especifique as ações que são permitidas e o recurso pode ser acessado.
 
@@ -118,19 +120,19 @@ Tipos:
 * inline policies: política só para um usuário e não possível reutilizar. (No user clicar em "add inline policy")
 * geral: Builtin e Custom (menu esquerda "Policy"). As etapas são:
 
-    * seleciona serviço:
-    * seleciona ações: (list, read, tagging. write. permission Management)
-    * selecionar resource:  possibilidades de bloqueio por região. account, intanceId
-    * Request condition: (mfa, horário, etc ...)
+  * seleciona serviço:
+  * seleciona ações: (list, read, tagging. write. permission Management)
+  * selecionar resource:  possibilidades de bloqueio por região. account, intanceId
+  * Request condition: (mfa, horário, etc ...)
 
 Exemplos:
 
 * EC2
-    * Ligar instâncias
-    * Desligar instâncias
+  * Ligar instâncias
+  * Desligar instâncias
 * RD
-    * Fazer querys
-    * Criar bancos
+  * Fazer querys
+  * Criar bancos
 
 Identity Federation
 ========================
@@ -141,11 +143,11 @@ Identity Federation
 * Identificado por sua organização ou um provedor terceirizado
 * Methods:
 
-    * Provedores de serviços de identidade pública ou OpenID (FB, Google ..) Web Identity Federation
-    * Provedores compatíveis com SAML 2.0 (Security Assertion Markup Language 2.0)
-    * Custom identity broken application (serviço LDAP ou Active Directory)
-    * AWS Directory Service for AD and use it for Enterprise
-    * AWS Cognito (guest access, public identity..)
+  * Provedores de serviços de identidade pública ou OpenID (FB, Google ..) Web Identity Federation
+  * Provedores compatíveis com SAML 2.0 (Security Assertion Markup Language 2.0)
+  * Custom identity broken application (serviço LDAP ou Active Directory)
+  * AWS Directory Service for AD and use it for Enterprise
+  * AWS Cognito (guest access, public identity..)
 
 
 Best Pratices
@@ -154,30 +156,30 @@ Best Pratices
 * Enable MFA and Reduce root access keys
 * Create Individual IAM users
 
-    * Individual credentials, permissions and credentials rotation.
-    * Create using console, CLI or API
-    * CloudTrail effectiveness. (teste de eficácia)
+  * Individual credentials, permissions and credentials rotation.
+  * Create using console, CLI or API
+  * CloudTrail effectiveness. (teste de eficácia)
 
 * Usar grupos para atribuir permissões a IAM users
 * Conceda o menor privilégio.
 
-    * Evite atribuir políticas com curinga *. *
-    * Default deny
+  * Evite atribuir políticas com curinga *. *
+  * Default deny
 
 * Apply IAM password policy
 * Usar Roles para aplicações que rodam em uma EC2.
 
-    * onde possível, não use credenciais de segurança.
-    * nunca compartilhe credenciais de segurança.
-    * casos de uso.
+  * onde possível, não use credenciais de segurança.
+  * nunca compartilhe credenciais de segurança.
+  * casos de uso.
 
-        * Cross account access:
+    * Cross account access:
 
-            *  Trust Policy
-            *  Access Policy
+      *  Trust Policy
+      *  Access Policy
 
-        * Intra-account delegation
-        * Federated Users (external users)
+    * Intra-account delegation
+    * Federated Users (external users)
 
 * Delegar usando Roles em vez de compartilhar credenciais.
 * Rotate credentials regularly
