@@ -7,7 +7,7 @@ Seja bem vindo a documentação.
 Manuais
 ----------
 .. toctree::
-   :maxdepth: 6
+   :maxdepth: 3
 
 
    securityidentity/index
