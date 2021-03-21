@@ -185,3 +185,13 @@ Best Pratices
 * Rotate credentials regularly
 * Remova credenciais desnecessárias
 * Usar Policy condicionais para segurança extra.
+
+
+Security Token Service (STS)
+*******************************
+
+Shared Responsibility Model
+*******************************
+
+CloudHSM
+*******************************
