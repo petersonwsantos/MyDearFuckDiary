@@ -1,11 +1,11 @@
 
-Documetação
+AWS
 ------------------------------
 
 Seja bem vindo.
 
 
-AWS
+Índice
 ----------
 .. toctree::
    :maxdepth: 3
