@@ -1,22 +1,18 @@
 ############################
-AWS Compute
+AWS Networking & Delivery
 ############################
 
-
-Elastic Compute Cloud (EC2)
+Virtual Private Cloud (VPC)
 **************************************
 
-AWS Lambda
+CloudFront (CDN)
 **************************************
 
-EC2 Container Service
+Elastic Network Interface (ENI)
 **************************************
 
-Elastic Beanstalk
+AWS Route53 (DNS)
 **************************************
 
-Elastic MapReduce (EMR)
-**************************************
-
-AWS Kinesis
+Elastic Load Balancing (ELB)
 **************************************

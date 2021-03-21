@@ -1,22 +1,22 @@
 ############################
-AWS Compute
+AWS Management Tools
 ############################
 
 
-Elastic Compute Cloud (EC2)
+CloudTrail
 **************************************
 
-AWS Lambda
+CloudFormation
 **************************************
 
-EC2 Container Service
+CloudWatch
 **************************************
 
-Elastic Beanstalk
+AWS WorkSpace
 **************************************
 
-Elastic MapReduce (EMR)
+OpsWorks
 **************************************
 
-AWS Kinesis
+Trusted Advisor
 **************************************
