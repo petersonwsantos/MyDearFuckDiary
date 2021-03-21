@@ -8,9 +8,9 @@ Seja bem vindo.
 Índice
 ----------
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
-   computer/index
+   compute/index
    management_tools/index
    network/index
    securityidentity/index
