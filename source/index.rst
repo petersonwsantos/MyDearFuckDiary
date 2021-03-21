@@ -6,7 +6,8 @@ Seja bem-vindo.
 
 
 Índice
-----------
+.............
+
 .. toctree::
    :maxdepth: 2
 
