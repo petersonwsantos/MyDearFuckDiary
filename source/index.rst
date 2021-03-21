@@ -5,7 +5,7 @@ Documetação
 Seja bem vindo.
 
 
-Manuais
+Índice
 ----------
 .. toctree::
    :maxdepth: 3
