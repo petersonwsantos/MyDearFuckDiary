@@ -1,7 +1,8 @@
 
-GoPeppi - Documetação
+Documetação
 ------------------------------
-Seja bem vindo a documentação.
+
+Seja bem vindo.
 
 
 Manuais
