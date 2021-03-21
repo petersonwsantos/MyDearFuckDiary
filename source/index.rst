@@ -2,7 +2,7 @@
 AWS
 ------------------------------
 
-Seja bem vindo.
+Seja bem-vindo.
 
 
 Índice
@@ -10,7 +10,9 @@ Seja bem vindo.
 .. toctree::
    :maxdepth: 2
 
+   application/index
    compute/index
+   database/index
    management_tools/index
    network/index
    securityidentity/index
