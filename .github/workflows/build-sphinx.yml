@@ -2,7 +2,7 @@ name: build-sphinx-to-gh-pages
 
 env:
   GITHUB_ACTOR: petersonwsantos
-  GITHUB_REPOSITORY: petersonwsantos/resumo-aws
+  GITHUB_REPOSITORY: petersonwsantos/MyDearFuckDiary
   GITHUB_TOKEN: ${{ secrets.GIT_WFW1 }}
 
 on: 

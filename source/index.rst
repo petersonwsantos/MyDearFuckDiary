@@ -1,7 +1,7 @@
 
 Pettt - Documetação
 ------------------------------
-Seja bem vindo a documentação do Peppi.
+Seja bem-vindo
 
 
 Manuais
@@ -11,3 +11,5 @@ Manuais
 
 
    aws/index
+   azure/index
+   kubernetes/index
