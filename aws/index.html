@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="pt-BR" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-BR" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Amazon Web Services &mdash; documentação MyDearFuckDiary 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Azure" href="../azure/index.html" />
+    <link rel="prev" title="AWS" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MyDearFuckDiary
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Amazon Web Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#aws-compute">AWS Compute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aws-security-identity-compliance">AWS Security, Identity &amp; Compliance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#identity-access-management-iam">Identity Access Management (IAM)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#password-policy">Password Policy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caracteristicas">Características</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#includes">Includes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#identity-federation">Identity Federation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#best-pratices">Best Pratices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aws-management-tools">AWS Management Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../azure/index.html">Azure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kubernetes/index.html">Kubernetes</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MyDearFuckDiary</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Amazon Web Services</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/aws/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="amazon-web-services">
+<h1>Amazon Web Services<a class="headerlink" href="#amazon-web-services" title="Link permanente para este título">¶</a></h1>
+<section id="aws-compute">
+<h2>AWS Compute<a class="headerlink" href="#aws-compute" title="Link permanente para este título">¶</a></h2>
+</section>
+<section id="aws-security-identity-compliance">
+<h2>AWS Security, Identity &amp; Compliance<a class="headerlink" href="#aws-security-identity-compliance" title="Link permanente para este título">¶</a></h2>
+<section id="identity-access-management-iam">
+<h3>Identity Access Management (IAM)<a class="headerlink" href="#identity-access-management-iam" title="Link permanente para este título">¶</a></h3>
+<p>Gerencia usuários grupos, roles e policies. Algumas de suas features são:</p>
+<ul class="simple">
+<li><p>Controle de segurança para o acesso individual e em grupo aos recursos da AWS.</p></li>
+<li><p>Suporte nativo para autenticação com MFA.</p></li>
+<li><p>Acesso compartilhado à sua conta AWS.</p></li>
+<li><p>Permissões granulares</p></li>
+<li><p>Acesso seguro aos recursos da AWS para aplicativos executados no EC2</p></li>
+<li><p>Identity federation(federação): para conceder permissões para usuários fora da AWS (FB, Google ..)</p></li>
+<li><p>Conformidade com o padrão de segurança de dados (DSS) da indústria de cartões de pagamento (PCI)</p></li>
+<li><p>Auditoria de registros de acesso usando CloudTrail</p></li>
+<li><p>Eventually Consistent</p></li>
+</ul>
+<section id="password-policy">
+<h4>Password Policy<a class="headerlink" href="#password-policy" title="Link permanente para este título">¶</a></h4>
+<ul class="simple">
+<li><p>Definição de comprimento mínimo de senha</p></li>
+<li><p>Complexidade</p></li>
+<li><p>Permitir/Obrigar que todos os usuários IAM alterem suas próprias senhas.</p></li>
+<li><p>Expiração de senha</p></li>
+<li><p>Impedir que os usuários reutilizem senhas anteriores</p></li>
+<li><p>Forçar os usuários a entrar em contato com um administrador de conta quando a senha expirar</p></li>
+</ul>
+</section>
+<section id="caracteristicas">
+<h4>Características<a class="headerlink" href="#caracteristicas" title="Link permanente para este título">¶</a></h4>
+<section id="user-based">
+<h5>User-Based<a class="headerlink" href="#user-based" title="Link permanente para este título">¶</a></h5>
+<section id="iam-policies">
+<h6>IAM Policies<a class="headerlink" href="#iam-policies" title="Link permanente para este título">¶</a></h6>
+<ol class="arabic simple">
+<li><p>IAM policies podem se atachadas em:</p></li>
+</ol>
+<ul>
+<li><p><strong>IAM user</strong> ou <strong>Group</strong>. (“Principal” é considerado o Usuário ou Grupo)</p></li>
+<li><p><strong>Resources AWS</strong> Ex: S3. (“Principal” precisa ser especificado. Can be ARNs of User, Roles, AWS service)</p></li>
+<li><p><strong>Role</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Especifique “Principal” atachando uma “Trust Policy(Política de confiança)” que diz quem pode assumir a Role.</p></li>
+<li><p>Anexe as políticas de permissão normais, SEM um principal, “QUEM” é determinado pela Trust Policy.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Especifique as ações que são permitidas e o recurso pode ser acessado.</p></li>
+</ol>
+<ul class="simple">
+<li><p>EC2</p></li>
+<li><p>RDS</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Atenção: Não é possível com IAM permitir ou negar acesso ao sistema operacional de um EC2 específico. Para isso use: SSH Keys, Windows Passwords e Security Group.</p>
+</div>
+</section>
+</section>
+<section id="resource-based-policies">
+<h5>Resource Based Policies<a class="headerlink" href="#resource-based-policies" title="Link permanente para este título">¶</a></h5>
+<p>Atachado a um Resource e está disponível apenas para:</p>
+<ul class="simple">
+<li><p>S3</p></li>
+<li><p>Glacier</p></li>
+<li><p>SNS</p></li>
+<li><p>SQS</p></li>
+<li><p>AWS KMS</p></li>
+</ul>
+</section>
+<section id="management-console">
+<h5>Management Console<a class="headerlink" href="#management-console" title="Link permanente para este título">¶</a></h5>
+</section>
+</section>
+<section id="includes">
+<h4>Includes<a class="headerlink" href="#includes" title="Link permanente para este título">¶</a></h4>
+<section id="user">
+<h5>User<a class="headerlink" href="#user" title="Link permanente para este título">¶</a></h5>
+<p>Quando o usuário é criado ele recebe “Access Key ID” e “Secret Access Key”.</p>
+</section>
+<section id="group">
+<h5>Group<a class="headerlink" href="#group" title="Link permanente para este título">¶</a></h5>
+<p>Grups são coleções de IAM Users.
+É permitido 100 Groups por account.
+Os usuários podem pertencer a vários grupos.</p>
+</section>
+<section id="role">
+<h5>Role<a class="headerlink" href="#role" title="Link permanente para este título">¶</a></h5>
+<p>Quando anexo um usuário a varias roles é possível qual papel desejo. Ex: Role de desenvolvimento ou Role de produção.
+( IAM User + (RolePROD(+Policy2) + RoleDEV(Policy1+Policy2)</p>
+<p>Posso dar permissão para uma instância usar um recurso AWS
+( EC2(cli que faz snapshot)+(Role(Policy1+Policy2)) )</p>
+<ul class="simple">
+<li><p>Permitir que instâncias EC2 acessem outros recursos AWS</p></li>
+<li><p>Usado por aplicativos rodando na EC2, sem uso de credenciais</p></li>
+<li><p>Defina as permissões que podem ser assumidas por IAM Users ou Resources.</p></li>
+<li><p>Conceda acesso aos seus Resources a usuários de outra conta da AWS.</p></li>
+<li><p>Pode ser usado para permitir que os usuários assumam temporariamente uma Role com menos privilégios de acesso a recursos críticos.</p></li>
+<li><p>podem ter permissões específicas em uma região.</p></li>
+</ul>
+</section>
+<section id="policy">
+<h5>Policy<a class="headerlink" href="#policy" title="Link permanente para este título">¶</a></h5>
+<p>O que o usuário ou grupo pode fazer.</p>
+<ul class="simple">
+<li><p>Quando adicionamos um usuário ao grupo ele ira herdar as permissões Ex: ( IAM User + (Group + Policy) )</p></li>
+<li><p>Quando o usuário pertencer a mais de um grupo não poderá, selecionar no login, a qual grupo prefere trabalhar/ receber as permissões.</p></li>
+<li><p>As politicas são descritas em um formato JSON.</p></li>
+<li><p>não são específicos da região.</p></li>
+</ul>
+<p>Tipos:</p>
+<ul>
+<li><p>inline policies: política só para um usuário e não possível reutilizar. (No user clicar em “add inline policy”)</p></li>
+<li><p>geral: Builtin e Custom (menu esquerda “Policy”). As etapas são:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>seleciona serviço:</p></li>
+<li><p>seleciona ações: (list, read, tagging. write. permission Management)</p></li>
+<li><p>selecionar resource:  posibilidade de bloqueio por regioão. account, intanceId</p></li>
+<li><p>Request condition: (mfa, horário, etc …)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Exemplos:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>EC2</dt><dd><ul>
+<li><p>Ligar instâncias</p></li>
+<li><p>Desligar instãncias</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>RD</dt><dd><ul>
+<li><p>Fazer querys</p></li>
+<li><p>Criar bancos</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+<section id="identity-federation">
+<h4>Identity Federation<a class="headerlink" href="#identity-federation" title="Link permanente para este título">¶</a></h4>
+<ul>
+<li><p>A IAM Role pode ser usada para especificar permissões para usuários identificados externamente.</p></li>
+<li><p>Max 5000 IAM users per account</p></li>
+<li><p>Ativa credenciais temporárias ILIMITADAS</p></li>
+<li><p>Identificado por sua organização ou um provedor terceirizado</p></li>
+<li><p>Methods:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Provedores de serviços de identidade pública ou OpenID (FB, Google ..) Web Identity Federation</p></li>
+<li><p>Provedores compatíveis com SAML 2.0 (Security Assertion Markup Language 2.0)</p></li>
+<li><p>Custom identity broken application (serviço LDAP ou Active Directory)</p></li>
+<li><p>AWS Directory Service for AD and use it for Enterprise</p></li>
+<li><p>AWS Cognito (guest access, public identity..)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="best-pratices">
+<h4>Best Pratices<a class="headerlink" href="#best-pratices" title="Link permanente para este título">¶</a></h4>
+<ul>
+<li><p>Enable MFA and Reduce root access keys</p></li>
+<li><p>Create Individual IAM users</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Individual credentials, permissions and credentials rotation.</p></li>
+<li><p>Create using console, CLI or API</p></li>
+<li><p>CloudTrail effectiveness. (teste de eficácia)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Usar grupos para atribuir permissões a IAM users</p></li>
+<li><p>Conceda o menor privilégio.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Evite atribuir políticas com curinga <a href="#id1"><span class="problematic" id="id2">*</span></a>. *</p></li>
+<li><p>Default deny</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Apply IAM password policy</p></li>
+<li><p>Usar Roles para apliacações que rodan em uma EC2.</p>
+<blockquote>
+<div><ul>
+<li><p>onde possível, não use credenciais de segurança.</p></li>
+<li><p>nunca compartilhe credenciais de segurança.</p></li>
+<li><p>casos de uso.</p>
+<blockquote>
+<div><ul>
+<li><p>Cross account access:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Trust Policy</p></li>
+<li><p>Access Policy</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Intra-account delegation</p></li>
+<li><p>Federated Users (external users)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Delegar usando Roles em vez de compartilhar credenciais.</p></li>
+<li><p>Rotate credentials regularly</p></li>
+<li><p>Remova credenciais desnecessárias</p></li>
+<li><p>Usar Policy condicionais para segurança extra.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="aws-management-tools">
+<h2>AWS Management Tools<a class="headerlink" href="#aws-management-tools" title="Link permanente para este título">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../azure/index.html" class="btn btn-neutral float-right" title="Azure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="AWS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 1993-2021, Peterson WS 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
