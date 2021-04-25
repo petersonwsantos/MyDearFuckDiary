@@ -58,8 +58,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Howto'
-copyright = u'2021, PePi'
+project = u'MyDearFuckDiary'
+copyright = u'1993-2021, Peterson WS '
 
 
 # The version info for the project you're documenting, acts as replacement for
