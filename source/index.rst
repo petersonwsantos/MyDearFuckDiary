@@ -13,3 +13,4 @@ Manuais
    aws/index
    azure/index
    kubernetes/index
+   python/index
