@@ -1,6 +1,8 @@
 {
+    "restructuredtext.confPath": "${workspaceFolder}/source",
+    "cSpell.language": ",pt,pt_BR",
     "cSpell.enableFiletypes": [
+        "ansible",
         "restructuredtext"
-    ],
-    "restructuredtext.confPath": "${workspaceFolder}/source"
+    ]
 }

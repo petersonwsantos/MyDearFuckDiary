@@ -3,12 +3,11 @@ Documetação
 ------------------------------
 Seja bem-vindo
 
+Índice
+.............
 
-Manuais
-----------
 .. toctree::
-   :maxdepth: 6
-
+   :maxdepth: 2
 
    java/index
 
