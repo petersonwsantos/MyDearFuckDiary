@@ -1,0 +1,6 @@
+{
+    "cSpell.enableFiletypes": [
+        "restructuredtext"
+    ],
+    "restructuredtext.confPath": "${workspaceFolder}/source"
+}

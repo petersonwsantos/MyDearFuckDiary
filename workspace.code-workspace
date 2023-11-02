@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "MyDearFuckDiary",
+			"path": "."
+		},
+		{
+			"path": "../../repos/0.howto-new/source/mongo"
+		},
+		{
+			"path": "../../repos/0.howto-new/source/python"
+		},
+		{
+			"path": "../../../canal/startup/google-pepi"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"cSpell.language": "en,pt,pt_BR",
+		"cSpell.enabled": true
+	}
+}

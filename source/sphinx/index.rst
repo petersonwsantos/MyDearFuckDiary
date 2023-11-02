@@ -26,15 +26,15 @@ Resumo RST
 
 note (  .. note::  )
 
-.. note:: Este é o texto da nota . Esta parte está em  ``monospaced text``.
+.. note:: Este é o texto da nota. Esta parte está em  ``monospaced text``.
 
 warning (  .. warning::  )
 
-.. warning:: Este é o texto do warning. Esta parte está em  ``monospaced text``.
+.. warning:: Este é o texto de warning. Esta parte está em ``monospaced text``.
   Proceed with caution!
   Proceed with caution!
 
-Ver também  (  .. seealso::  )
+Ver também (  .. seealso::  )
 
 .. seealso::
 
@@ -78,7 +78,7 @@ Mostrar o conteudo de um arquivo:
 
 **Tópicos**
 
-This is exxample of topics
+This is example of topics
 
 * Topic 1
 
@@ -91,16 +91,12 @@ This is exxample of topics
 * Topic 2
 * Topic 3
 
-
-
 .. sidebar:: Título Lateral
   :subtitle: Optional Sidebar Subtitle
 
   Subsequent indented lines comprise
   the body of the sidebar, and are
   interpreted as body elements.
-
-
 
 
 .. topic:: Título como Tópico
@@ -126,7 +122,7 @@ Tópicos com 3 colunas
   * 4th item
   * 5th item
 
-Está é uma sitação do rodapé, Some text that requires a footnote [#f1]_ .
+Está é uma citação do rodapé, Some text that requires a footnote [#f1]_ .
 
 .. rubric:: Footnotes
 
@@ -148,7 +144,7 @@ A second method is as follows:
 
 texto longo |longtext|
 
-Subestituição de imagem
+Substituição de imagem
 
 
 .. |logo| image:: images/neelix.jpeg
@@ -167,8 +163,8 @@ Subestituição de imagem
 .. literalinclude:: ../terraform/files/demo-2/terraform.tfvars
 
 
-Instação
-=========
+Instalação
+============
 
 Instalação do sphinx
 
@@ -247,8 +243,6 @@ Edição de Vídeos
 
 :download:`dicas pdf_diolinux  <files/diolinux-e-book-10-dicas-para-editar-videos.pdf>`
 
-
-outro editor openshot
 
 
 

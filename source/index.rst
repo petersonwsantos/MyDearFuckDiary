@@ -1,5 +1,5 @@
 
-Pettt - Documetação
+Documetação
 ------------------------------
 Seja bem-vindo
 
@@ -10,7 +10,5 @@ Manuais
    :maxdepth: 6
 
 
-   aws/index
-   azure/index
-   kubernetes/index
-   python/index
+   java/index
+
