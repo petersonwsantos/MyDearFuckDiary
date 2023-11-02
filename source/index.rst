@@ -1,5 +1,5 @@
 
-AWS
+Documetação
 ------------------------------
 Seja bem-vindo
 
@@ -9,6 +9,5 @@ Seja bem-vindo
 .. toctree::
    :maxdepth: 2
 
-   aws/index
-   azure/index
-   kubernetes/index
+   java/index
+

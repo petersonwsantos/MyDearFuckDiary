@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "MyDearFuckDiary",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"cSpell.language": "en,pt,pt_BR",
+		"cSpell.enabled": true
+	}
+}
