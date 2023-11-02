@@ -3,15 +3,6 @@
 		{
 			"name": "MyDearFuckDiary",
 			"path": "."
-		},
-		{
-			"path": "../../repos/0.howto-new/source/mongo"
-		},
-		{
-			"path": "../../repos/0.howto-new/source/python"
-		},
-		{
-			"path": "../../../canal/startup/google-pepi"
 		}
 	],
 	"settings": {
